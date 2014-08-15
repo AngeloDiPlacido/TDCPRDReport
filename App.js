@@ -384,8 +384,9 @@ Ext.define('CustomApp', {
             var myTags = myUserStory.get('Tags');
             if (myTags.Count > 0) {
                 //console.log('user story has tags:', myTags);
-                var tagsNameArray = myTags._tagsNameArray;
+                var tagsNameArray = myTags._namesArray;
                 var prdUserStory = false;
+                //console.log('myTags._namesArray: ', myTags._namesArray)
                 //console.log('tags name array: ', tagsNameArray);
                 for (var tag in tagsNameArray) {
                     //console.log('tag name:', tagsNameArray[tag].Name);
